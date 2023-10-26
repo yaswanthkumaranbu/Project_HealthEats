@@ -1,0 +1,6 @@
+/* App.css */
+.video-flip {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1); /* For Safari and older browsers */
+  transform-origin: center;
+}

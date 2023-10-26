@@ -1,0 +1,112 @@
+[
+  {
+    "label": "apple",
+    "accuracy": "High",
+    "name": "Apple",
+    "type": "Veg",
+    "calories": 52,
+    "protein": 0.26,
+    "vitamins": "A, C, B6",
+    "minerals": "Potassium",
+    "suggest": "Good for your health"
+  },
+  {
+    "label": "orange",
+    "accuracy": "High",
+    "name": "Orange",
+    "type": "Veg",
+    "calories": 43,
+    "protein": 1.0,
+    "vitamins": "C",
+    "minerals": "Potassium",
+    "suggest": "Good for your health"
+  },
+  {
+    "label": "banana",
+    "accuracy": "High",
+    "name": "Banana",
+    "type": "Veg",
+    "calories": 89,
+    "protein": 1.1,
+    "vitamins": "B6, C",
+    "minerals": "Potassium",
+    "suggest": "Good for your health"
+  },
+  {
+    "label": "broccoli",
+    "accuracy": "High",
+    "name": "Broccoli",
+    "type": "Veg",
+    "calories": 55,
+    "protein": 2.8,
+    "vitamins": "A, C, K",
+    "minerals": "Calcium, Iron",
+    "suggest": "Healthy choice"
+  },
+  {
+    "label": "carrot",
+    "accuracy": "High",
+    "name": "Carrot",
+    "type": "Veg",
+    "calories": 41,
+    "protein": 0.93,
+    "vitamins": "A, C, K",
+    "minerals": "Potassium, Calcium",
+    "suggest": "Healthy choice"
+  },
+  {
+    "label": "sandwich",
+    "accuracy": "High",
+    "name": "Sandwich",
+    "type": "Non-Veg",
+    "calories": 250,
+    "protein": 15,
+    "vitamins": "A, B6",
+    "minerals": "Calcium, Iron",
+    "suggest": "Moderate consumption"
+  },
+  {
+    "label": "hot dog",
+    "accuracy": "High",
+    "name": "Hot Dog",
+    "type": "Non-Veg",
+    "calories": 150,
+    "protein": 5,
+    "vitamins": "B12",
+    "minerals": "Iron",
+    "suggest": "Limit consumption"
+  },
+  {
+    "label": "donut",
+    "accuracy": "High",
+    "name": "Donut",
+    "type": "Non-Veg",
+    "calories": 300,
+    "protein": 4,
+    "vitamins": "A, B6",
+    "minerals": "Iron",
+    "suggest": "Unhealthy choice"
+  },
+  {
+    "label": "cake",
+    "accuracy": "High",
+    "name": "Cake",
+    "type": "Non-Veg",
+    "calories": 350,
+    "protein": 5,
+    "vitamins": "A, B6",
+    "minerals": "Calcium, Iron",
+    "suggest": "Unhealthy choice"
+  },
+  {
+    "label": "pizza",
+    "accuracy": "High",
+    "name": "Pizza",
+    "type": "Non-Veg",
+    "calories": 285,
+    "protein": 12,
+    "vitamins": "A, B6",
+    "minerals": "Calcium, Iron",
+    "suggest": "Unhealthy choice"
+  }
+]
