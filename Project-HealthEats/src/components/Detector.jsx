@@ -4,22 +4,41 @@ import axios from "axios";
 import "./Detector.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 export const Detector = () => {
   const [text, setText] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
   const [successMessage, setSuccessMessage] = useState("");
+  const [key,setKey]=useState("");
+  const [age,setAge]=useState()
   const [foodSuggestions, setFoodSuggestions] = useState({});
   const [selectedTimeOfDay, setSelectedTimeOfDay] = useState("morning");
 
+const onAgeChange=()=>{
+  const ageInputElement = document.getElementById('age');
+  if (ageInputElement) {
+    const ageValue = parseInt(ageInputElement.value, 10); // Parse the age input value as an integer
+    setAge(ageValue);
+  }}
+
   const onFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
+  
+    // Assuming you have an input element with the id "ageInput"
+    const ageInputElement = document.getElementById('age');
+    if (ageInputElement) {
+      const ageValue = parseInt(ageInputElement.value, 10); // Parse the age input value as an integer
+      setAge(ageValue);
+    }
   };
+  
 
   const onFormSubmit = async (event) => {
     event.preventDefault();
-
+ 
     const formData = new FormData();
     formData.append("file", selectedFile);
+    formData.append("age",age);
 
     try {
       const response = await axios.post("http://localhost:5000/ocr", formData, {
@@ -28,15 +47,16 @@ export const Detector = () => {
         },
       });
       if (response.data.food_suggestions != "None") {
-        const { text, food_suggestions } = response.data;
-        console.log(response.data);
+        const { nutrients,text,found_keywords, food_suggestions } = response.data;
+        console.log(nutrients);
         setText(text);
         setFoodSuggestions(food_suggestions[0]);
+        setKey( found_keywords)
         setSuccessMessage("Image received successfully");
         alert("Image received successfully");
       } else {
         alert("Invalid input");
-        setFoodSuggestions({});
+        setFoodSuggestions({}); 
       }
     } catch (error) {
       if (error.response) {
@@ -56,6 +76,8 @@ export const Detector = () => {
 
       <h1 className="h1">Detector</h1>
       <form onSubmit={onFormSubmit}>
+        <label htmlFor="">Age:</label>
+        <input  type="number" id="age" onChange={onAgeChange} required ></input>
         <input type="file" accept="image/*" onChange={onFileChange} />
         <button className="submit" type="submit">
           Submit
@@ -79,10 +101,14 @@ export const Detector = () => {
       </div>
 
       {foodSuggestions[selectedTimeOfDay] && (
+        <>
+                  <h3>Disease identified : {key}</h3>
+        
         <div className="food-suggestions">
           <h2 className="h2">Food Suggestions for {selectedTimeOfDay}</h2>
           <p className="p">{foodSuggestions[selectedTimeOfDay]}</p>
         </div>
+        </>
       )}
     </div>
   );
