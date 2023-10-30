@@ -1,4 +1,105 @@
-/* Detector.module.css */
+/* Define your class names with corresponding styles */
+
+
+
+.h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+.submit {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.time-of-day-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.but {
+  background-color: #007acc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.disease-heading {
+  font-size: 18px;
+}
+
+
+.h2 {
+  font-size: 20px;
+}
+
+.p {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+/* ... previous CSS styles ... */
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.img-container img {
+  max-width: 300px;
+  margin: 0 10px; /* Add space between images */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.img-container img:hover {
+  transform: scale(1.1); /* Apply a scale transform on hover */
+}
+
+/* ... rest of your CSS ... */
+
+/* .avoid_tot{
+
+  display: flex;
+  justify-content: space-between;
+} */
+
+
+
 
 /* App Container */
 .Det {
@@ -67,10 +168,10 @@ input[type="file"] {
 }
 
 /* Food Suggestions Styles */
-.food-suggestions {
+.consumable, .avoid,.food-suggestions {
   margin: 20px auto;
   width: 80%;
-  max-width: 400px;
+  max-width: 800px;
   padding: 10px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;

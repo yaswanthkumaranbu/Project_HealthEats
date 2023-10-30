@@ -65,13 +65,23 @@ def ocr():
         # Initialize a dictionary to store nutrients, vitamins, and foods to avoid for different age groups
         nutrients = {
             'tumor': {
+
                 'child': {
                     'morning': {
                         'nutrients': {
                             'antioxidants': 'Berries, green tea',
                             'lean protein': 'Chicken nuggets, cheese',
                             'vegetables': 'Carrots, cucumber',
-                            'whole grains': 'Sugary cereals, soda'
+                        },
+                        'nutrient_url': {
+                            'vegetables1':'vegetables/carrot.jpeg',
+                            'vegetables2':'vegetables/cucumber.jpg',
+                            
+                        },
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_cereals.jpg',
+                            'avoid2':'Avoid/soda.jpg',
+                            
                         },
                         'vitamins': 'Vitamin A, Vitamin C',
                         'foods_to_avoid': 'Sugary cereals, soda'
@@ -82,6 +92,11 @@ def ocr():
                             'dairy': 'Milk, cheese sticks',
                             'fruits': 'Apple slices, grapes'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
+
                         'vitamins': 'Vitamin D, Calcium',
                         'foods_to_avoid': 'Fast food, sugary snacks'
                     },
@@ -91,10 +106,16 @@ def ocr():
                             'vegetables': 'Broccoli, green beans',
                             'protein': 'Eggs, chicken'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin K, Vitamin B12',
                         'foods_to_avoid': 'Candies, ice cream'
                     }
                 },
+
+
                 'adult': {
                     'morning': {
                         'nutrients': {
@@ -102,6 +123,10 @@ def ocr():
                             'whole grains': 'Whole wheat toast, muesli',
                             'lean proteins': 'Eggs, Greek yogurt',
                             'vegetables': 'Spinach, tomatoes'
+                        },
+                        'nutrient_url': {
+                            'vegetables':''
+
                         },
                         'vitamins': 'Vitamin C, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, pastries'
@@ -112,6 +137,10 @@ def ocr():
                             'whole grains': 'Brown rice, quinoa',
                             'vegetables': 'Broccoli, bell peppers'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin B6, Vitamin K',
                         'foods_to_avoid': 'Fast food, sugary drinks'
                     },
@@ -121,10 +150,16 @@ def ocr():
                             'vegetables': 'Kale, carrots',
                             'protein': 'Lean beef, turkey'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin E, Vitamin A',
                         'foods_to_avoid': 'Processed foods, high-sugar desserts'
                     }
                 },
+
+
                 'old_people': {
                     'morning': {
                         'nutrients': {
@@ -132,6 +167,10 @@ def ocr():
                             'whole grains': 'Whole grain cereal, bran muffins',
                             'lean proteins': 'Greek yogurt, cottage cheese',
                             'vegetables': 'Spinach, kale'
+                        },
+                        'nutrient_url': {
+                            'vegetables':''
+
                         },
                         'vitamins': 'Vitamin B12, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, soda'
@@ -142,6 +181,10 @@ def ocr():
                             'whole grains': 'Brown rice, barley',
                             'vegetables': 'Broccoli, asparagus'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin C, Vitamin E',
                         'foods_to_avoid': 'Fast food, sugary snacks'
                     },
@@ -151,12 +194,19 @@ def ocr():
                             'magnesium': 'Almonds, pumpkin seeds',
                             'protein': 'Tofu, lean beef'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin K, Vitamin A',
                         'foods_to_avoid': 'Candies, ice cream'
                     }
                 }
             },
+
+
             'sugar': {
+
                 'child': {
                     'morning': {
                         'nutrients': {
@@ -164,6 +214,10 @@ def ocr():
                             'whole grains': 'Brown rice, whole wheat bread',
                             'lean proteins': 'Chicken, tofu',
                             'vegetables': 'Kale, carrots'
+                        },
+                        'nutrient_url': {
+                            'vegetables':''
+
                         },
                         'vitamins': 'Vitamin A, Vitamin K',
                         'foods_to_avoid': 'Sugary beverages, candies'
@@ -174,6 +228,10 @@ def ocr():
                             'fiber': 'Whole grains, legumes',
                             'vegetables': 'Broccoli, asparagus'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin C, Vitamin D',
                         'foods_to_avoid': 'Sugary snacks, white bread'
                     },
@@ -183,10 +241,16 @@ def ocr():
                             'vegetables': 'Spinach, kale',
                             'protein': 'Chicken, turkey'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin E, Vitamin B12',
                         'foods_to_avoid': 'Sugary desserts, soda'
                     }
                 },
+
+
                 'adult': {
                     'morning': {
                         'nutrients': {
@@ -194,6 +258,10 @@ def ocr():
                             'whole grains': 'Whole wheat toast, muesli',
                             'lean proteins': 'Eggs, Greek yogurt',
                             'vegetables': 'Spinach, tomatoes'
+                        },
+                        'nutrient_url': {
+                            'vegetables':''
+
                         },
                         'vitamins': 'Vitamin C, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, pastries'
@@ -204,6 +272,10 @@ def ocr():
                             'whole grains': 'Brown rice, quinoa',
                             'vegetables': 'Broccoli, bell peppers'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin B6, Vitamin K',
                         'foods_to_avoid': 'Fast food, sugary drinks'
                     },
@@ -213,10 +285,16 @@ def ocr():
                             'vegetables': 'Kale, carrots',
                             'protein': 'Lean beef, turkey'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin E, Vitamin A',
                         'foods_to_avoid': 'Processed foods, high-sugar desserts'
                     }
                 },
+
+
                 'old_people': {
                     'morning': {
                         'nutrients': {
@@ -224,6 +302,10 @@ def ocr():
                             'whole grains': 'Whole grain cereal, bran muffins',
                             'lean proteins': 'Greek yogurt, cottage cheese',
                             'vegetables': 'Spinach, kale'
+                        },
+                        'nutrient_url': {
+                            'vegetables':''
+
                         },
                         'vitamins': 'Vitamin B12, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, soda'
@@ -234,6 +316,10 @@ def ocr():
                             'whole grains': 'Brown rice, barley',
                             'vegetables': 'Broccoli, asparagus'
                         },
+                        'nutrient_url': {
+                            'vegetables':''
+
+                        },
                         'vitamins': 'Vitamin C, Vitamin E',
                         'foods_to_avoid': 'Fast food, sugary snacks'
                     },
@@ -242,6 +328,10 @@ def ocr():
                             'calcium': 'Dairy products, leafy greens',
                             'magnesium': 'Almonds, pumpkin seeds',
                             'protein': 'Tofu, lean beef'
+                        },
+                        'nutrient_url': {
+                            'vegetables':''
+
                         },
                         'vitamins': 'Vitamin K, Vitamin A',
                         'foods_to_avoid': 'Candies, ice cream'
@@ -274,6 +364,7 @@ def ocr():
             'found_keywords': key,  # List of keywords present in the extracted text
             'food_suggestions': food_suggestion_list,
             'nutrients': nutrients[key.lower()][group],
+            'group': group,
             'image_location': os.path.join(app.config['UPLOAD_FOLDER'], filename),
             'message': 'Image received successfully'
         })
