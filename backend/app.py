@@ -93,10 +93,15 @@ def ocr():
                             'fruits': 'Apple slices, grapes'
                         },
                         'nutrient_url': {
-                            'vegetables':''
-
+                            'vegetables1':'fruits/apple.jpg',
+                            'vegetables2':'fruits/grape.jpg',
+                            
                         },
-
+                      'avoid_url': {
+                            'avoid1':'Avoid/fast_food.jpg',
+                            'avoid2':'Avoid/sugary_snacks.jpg',
+                            
+                        },
                         'vitamins': 'Vitamin D, Calcium',
                         'foods_to_avoid': 'Fast food, sugary snacks'
                     },
@@ -106,10 +111,17 @@ def ocr():
                             'vegetables': 'Broccoli, green beans',
                             'protein': 'Eggs, chicken'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                         'nutrient_url': {
+                            'vegetables1':'vegetables/broccoli.jpg',
+                            'vegetables2':'vegetables/beans.jpg',
+                            
                         },
+                      'avoid_url': {
+                            'avoid1':'Avoid/candy.jpg',
+                            'avoid2':'Avoid/ice_cream.jpg',
+                            
+                        },
+ 
                         'vitamins': 'Vitamin K, Vitamin B12',
                         'foods_to_avoid': 'Candies, ice cream'
                     }
@@ -124,11 +136,17 @@ def ocr():
                             'lean proteins': 'Eggs, Greek yogurt',
                             'vegetables': 'Spinach, tomatoes'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/spinach.jpg',
+                            'vegetables2':'vegetables/tomato.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin C, Vitamin D',
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_cereals.jpg',
+                            'avoid2':'Avoid/pastries.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin C, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, pastries'
                     },
                     'afternoon': {
@@ -137,11 +155,17 @@ def ocr():
                             'whole grains': 'Brown rice, quinoa',
                             'vegetables': 'Broccoli, bell peppers'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/broccoli.jpg',
+                            'vegetables2':'vegetables/bell_peppers.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin B6, Vitamin K',
+                      'avoid_url': {
+                            'avoid1':'Avoid/fast_food.jpg',
+                            'avoid2':'Avoid/sugary_drinks.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin B6, Vitamin K',
                         'foods_to_avoid': 'Fast food, sugary drinks'
                     },
                     'night': {
@@ -150,11 +174,17 @@ def ocr():
                             'vegetables': 'Kale, carrots',
                             'protein': 'Lean beef, turkey'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/kale.jpg',
+                            'vegetables2':'vegetables/carrot.jpeg',
+                            
                         },
-                        'vitamins': 'Vitamin E, Vitamin A',
+                      'avoid_url': {
+                            'avoid1':'Avoid/processed_food.jpg',
+                            'avoid2':'Avoid/deserts.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin E, Vitamin A',
                         'foods_to_avoid': 'Processed foods, high-sugar desserts'
                     }
                 },
@@ -169,8 +199,14 @@ def ocr():
                             'vegetables': 'Spinach, kale'
                         },
                         'nutrient_url': {
-                            'vegetables':''
-
+                            'vegetables1':'vegetables/spinach.jpg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
+                        },
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_cereals.jpg',
+                            'avoid2':'Avoid/soda.jpg',
+                            
                         },
                         'vitamins': 'Vitamin B12, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, soda'
@@ -181,11 +217,17 @@ def ocr():
                             'whole grains': 'Brown rice, barley',
                             'vegetables': 'Broccoli, asparagus'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/broccoli.jpg',
+                            'vegetables2':'vegetables/asparagus.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin C, Vitamin E',
+                      'avoid_url': {
+                            'avoid1':'Avoid/fast_food.jpg',
+                            'avoid2':'Avoid/sugary_snacks.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin C, Vitamin E',
                         'foods_to_avoid': 'Fast food, sugary snacks'
                     },
                     'night': {
@@ -194,11 +236,17 @@ def ocr():
                             'magnesium': 'Almonds, pumpkin seeds',
                             'protein': 'Tofu, lean beef'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/carrot.jpeg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin K, Vitamin A',
+                      'avoid_url': {
+                            'avoid1':'Avoid/candy.jpg',
+                            'avoid2':'Avoid/ice_cream.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin K, Vitamin A',
                         'foods_to_avoid': 'Candies, ice cream'
                     }
                 }
@@ -216,8 +264,14 @@ def ocr():
                             'vegetables': 'Kale, carrots'
                         },
                         'nutrient_url': {
-                            'vegetables':''
-
+                            'vegetables1':'vegetables/carrot.jpeg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
+                        },
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_beverages.jpg',
+                            'avoid2':'Avoid/candy.jpg',
+                            
                         },
                         'vitamins': 'Vitamin A, Vitamin K',
                         'foods_to_avoid': 'Sugary beverages, candies'
@@ -229,8 +283,14 @@ def ocr():
                             'vegetables': 'Broccoli, asparagus'
                         },
                         'nutrient_url': {
-                            'vegetables':''
-
+                            'vegetables1':'vegetables/broccoli.jpg',
+                            'vegetables2':'vegetables/asparagus.jpg',
+                            
+                        },
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_snacks.jpg',
+                            'avoid2':'Avoid/bread.jpg',
+                            
                         },
                         'vitamins': 'Vitamin C, Vitamin D',
                         'foods_to_avoid': 'Sugary snacks, white bread'
@@ -241,11 +301,17 @@ def ocr():
                             'vegetables': 'Spinach, kale',
                             'protein': 'Chicken, turkey'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/carrot.jpeg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin E, Vitamin B12',
+                      'avoid_url': {
+                            'avoid1':'Avoid/deserts.jpg',
+                            'avoid2':'Avoid/soda.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin E, Vitamin B12',
                         'foods_to_avoid': 'Sugary desserts, soda'
                     }
                 },
@@ -259,11 +325,17 @@ def ocr():
                             'lean proteins': 'Eggs, Greek yogurt',
                             'vegetables': 'Spinach, tomatoes'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/spinach.jpg',
+                            'vegetables2':'vegetables/tomato.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin C, Vitamin D',
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_cereals.jpg',
+                            'avoid2':'Avoid/pastries.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin C, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, pastries'
                     },
                     'afternoon': {
@@ -272,11 +344,17 @@ def ocr():
                             'whole grains': 'Brown rice, quinoa',
                             'vegetables': 'Broccoli, bell peppers'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/broccoli.jpg',
+                            'vegetables2':'vegetables/bell_peppers.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin B6, Vitamin K',
+                      'avoid_url': {
+                            'avoid1':'Avoid/fast_food.jpg',
+                            'avoid2':'Avoid/sugary_drinks.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin B6, Vitamin K',
                         'foods_to_avoid': 'Fast food, sugary drinks'
                     },
                     'night': {
@@ -285,11 +363,17 @@ def ocr():
                             'vegetables': 'Kale, carrots',
                             'protein': 'Lean beef, turkey'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/carrot.jpeg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin E, Vitamin A',
+                      'avoid_url': {
+                            'avoid1':'Avoid/processed_food.jpg',
+                            'avoid2':'Avoid/deserts.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin E, Vitamin A',
                         'foods_to_avoid': 'Processed foods, high-sugar desserts'
                     }
                 },
@@ -303,11 +387,17 @@ def ocr():
                             'lean proteins': 'Greek yogurt, cottage cheese',
                             'vegetables': 'Spinach, kale'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/spinach.jpg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin B12, Vitamin D',
+                      'avoid_url': {
+                            'avoid1':'Avoid/sugary_cereals.jpg',
+                            'avoid2':'Avoid/soda.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin B12, Vitamin D',
                         'foods_to_avoid': 'Sugary cereals, soda'
                     },
                     'afternoon': {
@@ -316,11 +406,17 @@ def ocr():
                             'whole grains': 'Brown rice, barley',
                             'vegetables': 'Broccoli, asparagus'
                         },
-                        'nutrient_url': {
-                            'vegetables':''
-
+                       'nutrient_url': {
+                            'vegetables1':'vegetables/broccoli.jpg',
+                            'vegetables2':'vegetables/asparagus.jpg',
+                            
                         },
-                        'vitamins': 'Vitamin C, Vitamin E',
+                      'avoid_url': {
+                            'avoid1':'Avoid/fast_food.jpg',
+                            'avoid2':'Avoid/sugary_snacks.jpg',
+                            
+                        },
+                         'vitamins': 'Vitamin C, Vitamin E',
                         'foods_to_avoid': 'Fast food, sugary snacks'
                     },
                     'night': {
@@ -330,8 +426,14 @@ def ocr():
                             'protein': 'Tofu, lean beef'
                         },
                         'nutrient_url': {
-                            'vegetables':''
-
+                            'vegetables1':'vegetables/carrot.jpeg',
+                            'vegetables2':'vegetables/kale.jpg',
+                            
+                        },
+                      'avoid_url': {
+                            'avoid1':'Avoid/candy.jpg',
+                            'avoid2':'Avoid/ice_cream.jpg',
+                            
                         },
                         'vitamins': 'Vitamin K, Vitamin A',
                         'foods_to_avoid': 'Candies, ice cream'
